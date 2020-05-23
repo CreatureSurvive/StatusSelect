@@ -1,0 +1,9 @@
+Package: com.creaturecoding.statusselect
+Name: StatusSelect
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Override the device statusbar style
+Maintainer: CreatureSurvive
+Author: CreatureSurvive
+Section: Tweaks

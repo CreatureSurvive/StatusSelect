@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>CreatureCoding © 2020</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+			
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>key</key>
+				<string>kEnabled</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.statusselect.prefs-changed</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.statusselect</string>
+				<key>default</key>
+				<false/>
+			</dict>
+			
+			<dict>
+				<key>cell</key>
+				<string>PSLinkListCell</string>
+				<key>detail</key>
+				<string>PSListItemsController</string>
+				<key>key</key>
+				<string>kStyle</string>
+				<key>validTitles</key>
+				<array>
+					<string>Default</string>
+					<string>iPhone X / XS (5.8)</string>
+					<string>iPhone XR (6.1)</string>
+					<string>iPhone XS Max(6.5)</string>
+					<string>CarPlay</string>
+				</array>
+				<key>validValues</key>
+				<array>
+					<integer>0</integer>
+					<integer>1</integer>
+					<integer>2</integer>
+					<integer>3</integer>
+					<integer>4</integer>
+				</array>
+				<key>label</key>
+				<string>StatusBar Style</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.statusselect.prefs-changed</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.statusselect</string>
+				<key>default</key>
+				<integer>0</integer>
+			</dict>
+			
+		</array>
+		<key>title</key>
+		<string>StatusSelect</string>
+	</dict>
+</plist>
