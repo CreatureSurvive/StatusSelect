@@ -3,13 +3,13 @@
 #define kSettingsChangedNotification (CFStringRef)@"com.creaturecoding.statusselect.prefs-changed"
 
 BOOL enabled = NO;
-NSInteger style = -1;
+NSInteger style = 0;
 
 static void LoadSettings() {
 	@autoreleasepool {
 		NSDictionary *preferences = [NSDictionary dictionaryWithContentsOfFile:kSettingsPath];
 		enabled = preferences[@"kEnabled"] ? [preferences[@"kEnabled"] boolValue] : NO;
-		style = preferences[@"kStyle"] ? [preferences[@"kStyle"] integerValue] : -1;
+		style = preferences[@"kStyle"] ? [preferences[@"kStyle"] integerValue] : 0;
 	}
 }
 
